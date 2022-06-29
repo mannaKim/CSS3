@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17_Background</title>
+    <!-- 배경 속성
+        - 특정 태그의 배경이미지 또는 색상을 지정하는 스타일 속성
+        - 종류
+            1) background-image 속성
+                - 배경에 넣을 그림을 지정하는 스타일 속성
+                - 속성에는 URL 단위 또는 그레이디언트를 입력
+            2) background-size 속상
+                - 그림 크기를 조정할 때 사용하는 스타일 속성이며, CSS3에서 추가된 기능
+                - 키워드 : contain/cover
+                    contain : 너비를 100%로 지정한 것과 같은 효과
+                    cover : 높이를 100%로 지정한 것과 같은 효과
+            3) background-repeat 속성
+                - repeat : 이미지가 패턴을 이룸
+                - 키워드 : no-repeat/repeat/repeat-x/repeat-y/round/space
+                repeat-x : x축 방향으로 이미지가 반복
+                repeat-y : x축 방향으로 이미지가 반복
+            4) background-attachment 속성
+                - 배경 이미지를 어떠한 방식으로 화면에 붙일 것인지를 지정하는 스타일 속성
+                - 속성의 기본 키워드 : scroll(키워드:fixed/scroll)
+                - fixed : 스크롤을 이동해도 배경이미지 고정
+            5) background-position 속성
+                - background-position:x축위치;
+                - background-position:x축위치 y축위치;
+    -->
+    <style type="text/css">
+        body{border:1px dashed red; margin:0px;}
+        body *{margin:10px; padding:10px; border:1px solid black;}
+        body{
+            background-image: url(images/BackgroundFront.png);
+            background-size:100%; /* 가로(x축방향) 또는 세로(y축방향) 중 먼저 꽉차는 크기만큼 고정 */
+            background-repeat:repeat-x;
+            background-attachment:fixed; /* 항상 고정된 위치에 나타남 */
+            background-position:0px 200px; 
+            /* 0px:왼쪽부터 x축방향(오른쪽)으로 떨어진 길이, 500px:위쪽부터 y축방향(아래쪽)으로 떨어진 길이 */
+            /* 좌표적용의 기준점 : 이미지의 왼쪽과 위쪽 경계선의 위치 */
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum</h1>
+    <p>계엄을 선포한 때에는 대통령은 지체없이 국회에 통고하여야 한다. 의원을 제명하려면 국회재적의원 3분의 2 이상의 찬성이 있어야 한다. 국가는 법률이 정하는 바에 의하여 재외국민을 보호할 의무를 진다.모든 국민은 법 앞에 평등하다. 누구든지 성별·종교 또는 사회적 신분에 의하여 정치적·경제적·사회적·문화적 생활의 모든 영역에 있어서 차별을 받지 아니한다.</p>
+    <h1>Lorem ipsum</h1>
+    <p>계엄을 선포한 때에는 대통령은 지체없이 국회에 통고하여야 한다. 의원을 제명하려면 국회재적의원 3분의 2 이상의 찬성이 있어야 한다. 국가는 법률이 정하는 바에 의하여 재외국민을 보호할 의무를 진다.모든 국민은 법 앞에 평등하다. 누구든지 성별·종교 또는 사회적 신분에 의하여 정치적·경제적·사회적·문화적 생활의 모든 영역에 있어서 차별을 받지 아니한다.</p>
+    <h1>Lorem ipsum</h1>
+    <p>계엄을 선포한 때에는 대통령은 지체없이 국회에 통고하여야 한다. 의원을 제명하려면 국회재적의원 3분의 2 이상의 찬성이 있어야 한다. 국가는 법률이 정하는 바에 의하여 재외국민을 보호할 의무를 진다.모든 국민은 법 앞에 평등하다. 누구든지 성별·종교 또는 사회적 신분에 의하여 정치적·경제적·사회적·문화적 생활의 모든 영역에 있어서 차별을 받지 아니한다.</p>
+</body>
+</html>

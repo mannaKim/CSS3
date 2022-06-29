@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23_Shadow</title>
+    <style type="text/css">
+        div {width: 600px; margin-bottom: 20px; padding: 5px 20px; background-color: aquamarine;}
+        .a{box-shadow: 5px 5px;} 
+        /* 첫째 둘째 요소는 좌우 상하 그림자 크기이다.
+        첫번째 요소 : 좌우 그림자 크기, 양수는 오른쪽 음수는 왼쪽 그림자를 표시
+        두번째 요소 : 상하 그림자 크기, 양수는 아래쪽 음수는 위쪽 그림자를 표시*/
+        .b{box-shadow: 5px 5px 5px;}
+        /* 세번째 요소 : 번짐 정도 */
+        .c{box-shadow: 5px 5px 5px 5px;}
+        /* 네번째 요소 : 그림자의 확장(전체크기) */
+        .d{box-shadow: 5px 5px 5px 5px rgb(217, 122, 255);}
+        /* 다섯번째 요소 : 그림자의 색상 */
+
+        /* 같은 방식으로 text-shadow도 있다. 다만 글자에 그림자를 넣는 동작이므로 사용할 때 글자의 크기나 굵기, 글자체 등을 고려하여 사용하는 것이 자연스럽다. */
+    </style>
+</head>
+<body>
+    <div class="a"><p>box-shadow:5px 5px</p></div>
+    <div class="b"><p>box-shadow:5px 5px 5px</p></div>
+    <div class="c"><p>box-shadow:5px 5px 5px 5px</p></div>
+    <div class="d"><p>box-shadow:5px 5px 5px 5px orange</p></div>
+</body>
+</html>

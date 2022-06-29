@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>08_Adjacent</title>
+	<!-- 같은 레벨(수준)에 있는 형제들 중 일부를 선택할 때 사용 -->
+	<style>
+		h1 + h2{color:green;}
+		/* 인접(adjacent) 선택자 : 여러 h2태그 중에서 h1태그의 바로 뒤에 위치하는 h2태그에만 적용 */
+		
+		h1 ~ h3{color:orange}
+		/* 형제(sibling) 선택자 : h1태그 뒤에 위치하는 h3태그에 적용 */
+	</style>	
+</head>
+<body>
+	<h1>Header - 1</h1>
+	<h2>Header - 2</h2>
+	<h2>Header - 2</h2>
+	<h3>Header - 3</h3>
+	<h3>Header - 3</h3>
+	<h2>Header - 2</h2>
+	<h3>Header - 3</h3>
+</body>
+</html>

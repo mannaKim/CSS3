@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19_ButtonByCSS</title>
+    <style type="text/css">
+        .button{width:150px; height:70px; background:#FF6A00; text-align:center; line-height:70px; font-size:200%; border:10px solid white; box-shadow:5px 5px 5px #555555; border-radius:30px; text-shadow:2px 2px 2px #333333;}
+        a{text-decoration:none; color:white; font-weight:bold;}
+        /* 
+        box-shadow:5px 5px 5px #555555; 
+            오른쪽 아래로 5px씩 번짐 정도 5px의 그림자를 회색계열로 표시
+        text-decoration:none; 
+            밑줄 등의 스타일을 없앰. 주로 앵커 태그 밑줄을 없앨 때 많이 사용 */
+        input[type=button]{width:170px; height:90px; color:white; background:#FF6A00; text-align:center; font-size:200%; font-weight:bold; border:10px solid white; box-shadow:5px 5px 5px #555555; border-radius:30px; text-shadow:2px 2px 2px #333333;}
+    </style>
+</head>
+<body>
+    <!-- CSS로 버튼 생성 -->
+    <div class="button"><a href="#">Click</a></div>
+    <br /><hr />
+    <input type="button" value="Click" />
+</body>
+</html>

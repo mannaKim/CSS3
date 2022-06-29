@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>13_BoxModel</title>
+	<!-- 박스모델 구성요소
+	- padding : 박스내부의 구성내용(이미지,텍스트 등)과 border 사이의 공간 (내부여백)
+	- border : 외곽선
+	- margin : 외곽선과 다른 개체 사이의 공간 (외부여백) -->
+	<style type="text/css">
+		.box{width:170px; height:100px;  border:10px solid blue;
+			 margin-bottom:30px; padding-left:30px; padding-top:30px;}
+		/* padding 값은 전체 크기에 합산된다. 따라서 box 크기는 width/height + border + padding
+		즉, 위 박스 클래스의 실제 width:220px, height:150px */
+		
+		/* 크롬의 검사 메뉴로 실제 박스의 패딩과 마진을 확인할 수 있음 */
+		
+	</style>
+</head>
+<body>
+	<div class="box">Box Model 1</div>
+	<div class="box">Box Model 2</div>
+</body>
+</html>

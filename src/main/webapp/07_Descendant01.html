@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>07_Descendant01</title>
+	<!-- 후손선택자 : 특정한 태그 아래에 있는 후손을 선택할 때 사용하는 선택자
+	id의 사용을 남용하지 않고 상대적 위치로 Selector를 사용한다. -->
+	<style type="text/css">
+	#section h1{color:blue;}
+	/* 빈칸(공백)으로 선택자가 이어지면, 아래에 포함되어 있는 child 선택자들 모두 지목하게 된다. */
+	/* id가 section인 태그 아래에 있는 태그들은 모두 선택된다는 의미 */
+	#header h1{color:red;}
+	
+	#header h1, #header h3 {background:yellow;}
+	/* ','로 구분하면 두 개의 후손선택자를 동시에 선택 가능
+	   #header h1,h3 => header 내부의 h1과 h3가 아니라, header 내부의 h1과 내외부 포함 모든 h3  */
+	</style>	
+</head>
+<body>
+	<div id="header">
+		<h1 class="title">회사이름/로고</h1>
+		<div id="nav">
+			<h1>Navigation</h1>
+			<h2>header2</h2>
+			<h3>CSS3</h3>
+		</div>
+	</div>
+	<div id="section">
+		<h1 class="title">Aside</h1>
+		<p><h1 class="title">Aside</h1>
+		국가는 대외무역을 육성하며, 이를 규제·조정할 수 있다. 형사피의자 또는 형사피고인으로서 구금되었던 자가 법률이 정하는
+		불기소처분을 받거나 무죄판결을 받은 때에는 법률이 정하는 바에 의하여 국가에 정당한 보상을 청구할 수 있다.
+		<h1 class="title">Aside</h1>
+	</div>
+</body>
+</html>

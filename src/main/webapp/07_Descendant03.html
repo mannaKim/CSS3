@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>07_Descendant03</title>
+	<style type="text/css">
+		/* table>tr>th{color:red;} */
+		/* 테이블태그에는 tr이 나오기 전 부분에 보이지 않는 tbody태그가 숨어있다.
+		테이블에 descendant를 적용하려면 아래와 같이 tbody를 언급해야한다. */
+		table>tbody>tr>th{color:red;}
+	</style>
+</head>
+<body>
+	<table border="1" width="300">
+		<tr>
+			<th>이름</th> <!-- 열들의 맨 윗 줄에 제목등을 넣을 때 td 대신 사용하는 태그 -->
+			<th>주소</th>
+		</tr>
+		<tr>
+			<td>홍길동</td>
+			<td>서울시 종로구</td>
+		</tr>
+		<tr>
+			<td>이순신</td>
+			<td>서울시 강남구</td>
+		</tr>
+	</table>
+</body>
+</html>
